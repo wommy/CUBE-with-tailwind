@@ -4,7 +4,7 @@
   "description": "An example of how you can use Tailwind CSS as the U (utilities) in CUBE CSS",
   "main": "tailwind.config.js",
   "scripts": {
-    "start": "vite"
+    "start": "node css-props-generator.js; vite"
   },
   "devDependencies": {
     "postcss": "^8.4.5",
