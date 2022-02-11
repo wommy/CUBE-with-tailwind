@@ -3,14 +3,27 @@
   "version": "0.1.0",
   "description": "An example of how you can use Tailwind CSS as the U (utilities) in CUBE CSS",
   "main": "tailwind.config.js",
+  "postcss": {
+    "plugins": {
+      "postcss-import-ext-glob": {},
+      "postcss-import": {},
+      "tailwindcss": {}
+    }
+  },
   "scripts": {
-    "start": "node css-props-generator.js; vite"
+    "start": "node css-props-generator.js; vite",
+    "build": "node css-props-generator.js; vite build"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.2",
     "postcss": "^8.4.5",
-    "postcss-cli": "^9.1.0",
+    "postcss-import": "^14.0.2",
+    "postcss-import-ext-glob": "^2.0.1",
     "prettier": "^2.5.1",
     "tailwindcss": "^3.0.16",
     "vite": "^2.8.0"
+  },
+  "peerDependencies": {
+    "autoprefixer": "^10.4.2"
   }
 }
